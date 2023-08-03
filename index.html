@@ -19,19 +19,19 @@
   </head>
   
   <body class="bg-secondary bg-opacity-10">
-    <div class="container">
-      <div class="col-8 offset-1 my-5 bg-white py-4 rounded shadow">
+    <div class="container" data-controller="add-item">
+      <div class="col-8 my-5 bg-white py-4 rounded shadow">
         
         <div class="row">
           <h1 class="text-center mb-4">Grocery bud 🥦</h1>
 
           <form class="row align-items-center mb-3">
             <div class="col-9 offset-1">
-              <input type="text" class="form-control" placeholder="eggs...">
+              <input type="text" data-add-item-target="input" class="form-control" placeholder="eggs...">
             </div>
             
             <div class="col-1 d-flex justify-content-center">
-              <button type="submit" class="btn btn-primary">Add</button>
+              <button type="submit" class="btn btn-primary" data-action="click->add-item#add">Add</button>
             </div>
           </form>
 
@@ -40,12 +40,12 @@
         <div class="row">
           <div class="col-8 offset-1">
 
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush" data-add-item-target="result">
               <!-- example of item card -->
-              <li class="list-group-item d-flex gap-3 align-items-center">
+              <!-- <li class="list-group-item d-flex gap-3 align-items-center">
                 <div>Milk</div>
                 <button type="submit" class="btn btn-sm btn-light">❌ Remove</button>
-              </li>
+              </li> -->
               <!-- example of item card -->
             </ul>
 
