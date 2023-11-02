@@ -1,0 +1,16 @@
+//////////////////////
+
+import ExampleController from "./controllers/example_controller.js";
+window.Stimulus.register("example", ExampleController);
+
+//////////////////////
+
+//////////////////////
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  connect() {
+    // TODO: console.log something!
+  }
+}
+//////////////////////
