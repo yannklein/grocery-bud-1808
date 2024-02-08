@@ -27,12 +27,11 @@
 
           <form class="row align-items-center mb-3">
             <div class="col-9 offset-1">
-              <input type="text" class="form-control" placeholder="eggs..."
-              data-add-item-target="input">
+              <input data-add-item-target="item" type="text" class="form-control" placeholder="eggs...">
             </div>
             
             <div class="col-1 d-flex justify-content-center">
-              <button data-action="click->add-item#add" type="submit" class="btn btn-primary">Add</button>
+              <button data-action="click->add-item#addItem" type="submit" class="btn btn-primary">Add</button>
             </div>
           </form>
 
@@ -41,14 +40,17 @@
         <div class="row">
           <div class="col-8 offset-1">
 
-            <ul class="list-group list-group-flush" 
-            data-add-item-target="list">
+            <ul data-add-item-target="list" class="list-group list-group-flush">
+
               <!-- example of item card -->
+
               <!-- <li class="list-group-item d-flex gap-3 align-items-center">
                 <div>Milk</div>
                 <button type="submit" class="btn btn-sm btn-light">❌ Remove</button>
               </li> -->
+              
               <!-- example of item card -->
+
             </ul>
 
           </div>
